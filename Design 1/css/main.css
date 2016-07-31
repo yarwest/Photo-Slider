@@ -1,0 +1,47 @@
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#img-box {
+    margin: 0 auto;
+    display: block;
+    background-color: #181717;
+    width: 1000px;
+    height: 598px;
+    position: relative;
+}
+
+#img-box div {
+    height: 85.032px;
+    width: 57.024px;
+    margin-top: 256.984px;
+    vertical-align: middle;
+}
+
+#button-left {
+    float: left;
+    margin-left: 28.008px;
+    background-image: url(../img/left-arrow.png);
+    background-position: center center;
+}
+
+#button-right {
+    float: right;
+    margin-right: 28.008px;
+    background-image: url(../img/right-arrow.png);
+    background-position: center center;
+}
+
+#img-box div:hover {
+    opacity: 0.85;
+}
+
+#img {
+    display: inline-block;
+    width: 763.992px;
+    height: 571.968px;
+    padding: 13.032px 0;
+    margin: 0 32.972px;
+}
