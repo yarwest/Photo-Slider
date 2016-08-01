@@ -19,6 +19,11 @@ function change(direction) {
     document.getElementById('img').src='../img/' + photos[currentPhoto];
 }
 
-function open() {
-    Document.getElementById('overlay').style.display="inline-block";
+function openOverlay() {
+    document.getElementById('overlay').style.display="block";
+    document.getElementById('overlay-img').src='../img/' + photos[currentPhoto];
+}
+
+function closeOverlay() {
+    document.getElementById('overlay').style.display="none";
 }
