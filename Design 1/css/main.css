@@ -1,34 +1,49 @@
+/* ---------------------------------------------------------------- */
+/* - Photo Slider -> Reset ---------------------------------------- */
+/* ---------------------------------------------------------------- */
+
 img {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* ---------------------------------------------------------------- */
+/* - Photo Slider -> Box ------------------------------------------ */
+/* ---------------------------------------------------------------- */
+
 #img-box {
     margin: 0 auto;
-    display: block;
+    display: table;
     background-color: #181717;
     width: 1000px;
     height: 598px;
     position: relative;
 }
 
+/* ---------------------------------------------------------------- */
+/* - Photo Slider -> Box -> Buttons ------------------------------- */
+/* ---------------------------------------------------------------- */
+
 #img-box div {
+    position: absolute;
+    top: 50%;
+    margin-top: -42.516px;
+    display: table-cell;
     height: 85.032px;
     width: 57.024px;
-    margin-top: 256.984px;
     vertical-align: middle;
 }
 
 #button-left {
-    float: left;
+    left: 0;
     margin-left: 28.008px;
     background-image: url(../img/left-arrow.png);
     background-position: center center;
 }
 
 #button-right {
-    float: right;
+    right: 0;
     margin-right: 28.008px;
     background-image: url(../img/right-arrow.png);
     background-position: center center;
@@ -38,10 +53,38 @@ img {
     opacity: 0.85;
 }
 
-#img {
-    display: inline-block;
-    width: 763.992px;
+/* ---------------------------------------------------------------- */
+/* - Photo Slider -> Box -> Image --------------------------------- */
+/* ---------------------------------------------------------------- */
+
+#img-container {
+    position: relative;
+    display: table-cell;
+    width: 763.993px;
     height: 571.968px;
-    padding: 13.032px 0;
-    margin: 0 32.972px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+#img {
+    display: inherit;
+    max-width: 763.992px;
+    max-height: 571.968px;
+    margin: 0 auto;
+    float: none;
+}
+
+/* ---------------------------------------------------------------- */
+/* - Photo Slider -> Overlay -------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+#overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #181717;
+    opacity: 0.75;
+    display: none;
 }
