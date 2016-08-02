@@ -19,12 +19,15 @@
                 <div id="button-left" onclick="change('left')"></div>
                 <span id="img-container">
                     <img id="img" src="../img/1.jpg" onclick="openOverlay()">
+                    <a href="javascript:void(0)" id="button-fullscreen" onclick="openOverlay()">+</a>
                 </span>
                 <div id="button-right" onclick="change('right')"></div>
             </div>
             <div id="overlay">
                 <a href="javascript:void(0)" id="button-close" onclick="closeOverlay()">&times;</a>
-                <img id="overlay-img">
+                <div id="overlay-img-container">
+                    <span id="overlay-img-helper"></span><img id="overlay-img">
+                </div>
             </div>
         </div>
         <script src="js/main.js"></script>

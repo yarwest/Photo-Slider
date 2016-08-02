@@ -74,31 +74,63 @@ img {
     float: none;
 }
 
+#button-fullscreen {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 60px;
+    color: #3e3d3d;
+    display: block; 
+    transition: 0.3s;
+}
+
+#button-fullscreen:hover, #button-fullscreen:focus {
+    color: #f1f1f1;
+}
+
 /* ---------------------------------------------------------------- */
 /* - Photo Slider -> Overlay -------------------------------------- */
 /* ---------------------------------------------------------------- */
 
 #overlay {
+    display: block;
     position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #181717;
-    opacity: 0.75;
+    background-color: rgb(24, 23, 23);
+    background-color: rgba(24, 23, 23, 0.75);
     z-index: 10;
     display: none;
+    <!--[if IE]>
+        background:transparent;
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#BF181717,endColorstr=#BF181717); 
+        zoom: 1;
+    <![endif]-->
+}
+
+#overlay-img-container {
+    height: 90%;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 0;
+    top: 2.5%;
+}
+
+#overlay-img-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 #overlay-img {
-    display: block;
-    position: relative;
-    top: 5%;
-    max-height: 85%;
+    max-height: 90%;
     max-width: 90%;
     text-align: center;
-    margin: 0 auto;
-    margin-top: 30px;
+    vertical-align: middle;
 }
 
 #button-close {
