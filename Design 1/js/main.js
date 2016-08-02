@@ -16,14 +16,18 @@ function change(direction) {
             currentPhoto++;
         }
     }
-    document.getElementById('img').src='../img/' + photos[currentPhoto];
+    assign('img');
 }
 
 function openOverlay() {
     document.getElementById('overlay').style.display="block";
-    document.getElementById('overlay-img').src='../img/' + photos[currentPhoto];
+    assign('overlay-img');
 }
 
 function closeOverlay() {
     document.getElementById('overlay').style.display="none";
+}
+
+function assign(ID) {
+    document.getElementById(ID).src='../img/' + photos[currentPhoto];
 }
