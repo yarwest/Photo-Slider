@@ -1,0 +1,41 @@
+<!doctype html>
+<!--
+	Yarno Boelens
+	Photo Slider Design 1
+	created on: 31-7-2016
+-->
+
+<html>
+    <head>
+        <title>Photo Slider</title>
+        <meta name="description" content="A photo slide show">
+        <meta name="keywords" content="Photo, Slide, Show">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+        <script src="js/main.js"></script>
+        <div id="page-wrapper">
+            <div id="img-box">
+                <div id="button-left" onclick="change('left')"></div>
+                <span id="img-container">
+                    <img id="img" src="../img/1.jpg" onclick="openOverlay()">
+                    <a href="javascript:void(0)" id="button-fullscreen" onclick="openOverlay()">+</a>
+                    <div id="img-indeces">
+                        <script>
+                            for(var i = 0; i < nPhotos; i++) {
+                                document.getElementById('img-indeces').innerHTML += "<div id='img-index-" + String(i) + "' onclick='select(" + String(i) + ")' class='img-index'></div>";
+                            }
+                        </script>
+                    </div>
+                </span>
+                <div id="button-right" onclick="change('right')"></div>
+            </div>
+            <div id="overlay">
+                <a href="javascript:void(0)" id="button-close" onclick="closeOverlay()">&times;</a>
+                <div id="overlay-img-container">
+                    <span id="overlay-img-helper"></span><img id="overlay-img">
+                </div>
+            </div>
+        </div>
+    </body>
