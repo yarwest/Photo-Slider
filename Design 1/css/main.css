@@ -70,7 +70,8 @@ img {
     display: inherit;
     max-width: 763.992px;
     max-height: 571.968px;
-    margin: 0 auto;
+    margin: 0 auto !important;
+    text-align: center;
     float: none;
 }
 
