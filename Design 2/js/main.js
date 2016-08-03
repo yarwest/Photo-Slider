@@ -24,6 +24,15 @@ function select(img) {
     assign('img');
 }
 
+function isSelected(img) {
+    if(img === currentPhoto) {
+        return " selected";
+    }
+    else {
+        return '';
+    }
+}
+
 function openOverlay() {
     document.getElementById('overlay').style.display="block";
     assign('overlay-img');

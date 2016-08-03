@@ -24,7 +24,7 @@
                     <div id="img-indeces">
                         <script>
                             for(var i = 0; i < nPhotos; i++) {
-                                document.getElementById('img-indeces').innerHTML += "<div id='img-index-" + String(i) + "' onclick='select(" + String(i) + ")' class='img-index'></div>";
+                                document.getElementById('img-indeces').innerHTML += "<div id='img-index-" + String(i) + "' onclick='select(" + String(i) + ")' class='img-index" + isSelected(i) + "'></div>";
                             }
                         </script>
                     </div>
