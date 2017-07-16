@@ -1,0 +1,32 @@
+<!doctype html>
+<!--
+	Yarno Boelens
+	Fullscreen Photo Viewer
+	created on: 16-7-2017
+-->
+
+<html>
+    <head>
+        <title>Photo Slider</title>
+        <meta name="description" content="A fullscreen photo viewer">
+        <meta name="keywords" content="Photo, Fullscreen, View">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <div id="img-box">
+                <span id="img-container">
+                    <img id="img" src="../img/1.jpg" onclick="openOverlay()">
+                    <a href="javascript:void(0)" id="button-fullscreen" onclick="openOverlay()">+</a>
+                </span>
+            </div>
+            <div id="overlay">
+                <a href="javascript:void(0)" id="button-close" onclick="closeOverlay()">&times;</a>
+                <div id="overlay-img-container">
+                    <span id="overlay-img-helper"></span><img id="overlay-img">
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
