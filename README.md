@@ -21,3 +21,6 @@ This implementation is a basic carousel that allows the user to view multiple pi
 #### Design 2
 Work in progress.
 Design 2 works similar to the first design with the difference being that this design contains dots at the bottom of the image that show which picture is selected and allows the selection of a specific image.
+
+## Contribution
+Feel free to fork this repo and contribute by expanding/optimizing/adding implementations. Please do make a separate branch for any separate design. Whenever you have something finished you can make a pull request to the branch of the same design (or the master branch if there is no such branch) on this repository.
